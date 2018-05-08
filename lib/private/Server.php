@@ -191,12 +191,6 @@ class Server extends ServerContainer implements IServerContainer {
 		});
 		$this->registerAlias('PreviewManager', \OCP\IPreview::class);
 
-		$this->registerService(\OC\Preview\Watcher::class, function (Server $c) {
-			return new \OC\Preview\Watcher(
-				$c->getAppDataDir('preview')
-			);
-		});
-
 		$this->registerService('EncryptionManager', function (Server $c) {
 			$view = new View();
 			$util = new Encryption\Util(
@@ -276,9 +270,6 @@ class Server extends ServerContainer implements IServerContainer {
 			);
 			$connector = new HookConnector($root, $view);
 			$connector->viewToNode();
-
-			$previewConnector = new \OC\Preview\WatcherConnector($root, $c->getSystemConfig());
-			$previewConnector->connectWatcher();
 
 			return $root;
 		});

@@ -846,8 +846,6 @@ class ComposerStaticInit53792487c5a8370acc0b06b1a864ff4c
         'OC\\Preview\\StarOffice' => __DIR__ . '/../../..' . '/lib/private/Preview/StarOffice.php',
         'OC\\Preview\\TIFF' => __DIR__ . '/../../..' . '/lib/private/Preview/TIFF.php',
         'OC\\Preview\\TXT' => __DIR__ . '/../../..' . '/lib/private/Preview/TXT.php',
-        'OC\\Preview\\Watcher' => __DIR__ . '/../../..' . '/lib/private/Preview/Watcher.php',
-        'OC\\Preview\\WatcherConnector' => __DIR__ . '/../../..' . '/lib/private/Preview/WatcherConnector.php',
         'OC\\Preview\\XBitmap' => __DIR__ . '/../../..' . '/lib/private/Preview/XBitmap.php',
         'OC\\RedisFactory' => __DIR__ . '/../../..' . '/lib/private/RedisFactory.php',
         'OC\\Remote\\Api\\ApiBase' => __DIR__ . '/../../..' . '/lib/private/Remote/Api/ApiBase.php',
